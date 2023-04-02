@@ -47,6 +47,45 @@
                                 <use href="./images/sprite-icons.svg#modal-close-button"></use>
                             </svg>
                         </button>
+                        <p class="modal-header">Leave your contacts and we will call you back</p>
+                        <form>
+                            <label  class="modal-label">
+                                Name
+                                <span class="input-box">
+                                    <svg width="18" height="24" class="input-icon">
+                                        <use href="./images/sprite-icons.svg#form-name"></use>
+                                    </svg>
+                                    <input type="text" name="user-name" id="form-name" class="modal-input" required>
+                                </span>
+                            </label>
+                            <label class="modal-label">
+                                Phone
+                                <span class="input-box">
+                                    <svg width="18" height="24" class="input-icon">
+                                        <use href="./images/sprite-icons.svg#form-tel"></use>
+                                    </svg>
+                                    <input type="text" name="user-phone" id="form-tel" class="modal-input" required>
+                                </span>
+                            </label>
+                            <label class="modal-label">
+                                Email
+                                <span class="input-box">
+                                    <svg width="18" height="24" class="input-icon">
+                                        <use href="./images/sprite-icons.svg#form-mail"></use>
+                                    </svg>
+                                    <input type="text" name="user-mail" id="form-mail" class="modal-input" required>
+                                </span>
+                            </label>
+                            <label class="modal-label comment-label">
+                                Comment
+                                <textarea name="modal-comment" class="modal-comment" placeholder="Text input"></textarea>
+                            </label>
+                            <input type="checkbox" name="privacy-policy" value="true" id="privacy-policy" class="modal-checkbox visually-hidden" />
+                            <label for="privacy-policy" class="user-accept">I accept the terms and conditions of the
+                                <a href="" class="privacy-link">Privacy Policy</a>
+                            </label>
+                            <button class="modal-button" type="submit">Send</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -367,6 +406,19 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+            <div class="container footer-sub">
+                <p class="sub-header">Subscribe</p>
+                <form class="sub-field">
+                    <label for="sub-email" class="visually-hidden"></label>
+                    <input type="email" name="email" id="sub-email" class="sub-input" placeholder="E-mail">
+                    <button type="submit" class="sub-button">
+                        <span class="sub-button-text">Subscribe</span>
+                        <svg width="24" height="20" class="sub-button-icon">
+                            <use href="./images/sprite-icons.svg#icon-subscribe"></use>
+                        </svg>
+                    </button>
+                </form>
             </div>
         </div>
     </footer>
